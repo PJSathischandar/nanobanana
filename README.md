@@ -12,9 +12,17 @@ This project provides a simple Streamlit UI that integrates the nano banana libr
    ```sh
    pip install streamlit nano-banana
    ```
-2. Run the app:
+
+2. Set up your Gemini API key for Streamlit:
+   - Create a file at `.streamlit/secrets.toml` in your project root (create the `.streamlit` folder if it doesn't exist).
+   - Add the following content (replace with your actual API key):
+     ```toml
+     GEMINI_API_KEY = "your-api-key-here"
+     ```
+
+3. Run the app (from your virtual environment):
    ```sh
-   streamlit run app.py
+   .venv\Scripts\python.exe -m streamlit run app.py
    ```
 
 ## Usage
